@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_f3f3f3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <include layout="@layout/record_title" android:visibility="visible" />
+            <include layout="@layout/record_date" android:visibility="visible" />
+            <include layout="@layout/record_time" android:visibility="visible"/>
+            <include layout="@layout/record_type" android:visibility="visible"/>
+            <include layout="@layout/record_label" android:visibility="visible" />
+            <include layout="@layout/record_notes" android:visibility="visible"/>
+            <include layout="@layout/record_money" android:visibility="visible"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

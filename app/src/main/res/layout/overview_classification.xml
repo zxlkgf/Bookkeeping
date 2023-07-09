@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/overview_classification_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分类"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        />
+    <ListView
+        android:id="@+id/overview_classification_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_header_shape"
+        android:layout_below="@+id/overview_classification_tv"
+        />
+</RelativeLayout>

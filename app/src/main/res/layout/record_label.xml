@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_header_shape"
+    android:padding="10dp"
+    android:layout_marginBottom="5dp"
+    >
+    <ImageView
+        android:id="@+id/record_label_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/label"
+        />
+    <TextView
+        android:id="@+id/record_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标签"
+        android:layout_toEndOf="@+id/record_label_iv"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+    <Switch
+        android:id="@+id/record_label_sw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_alignParentEnd="true"
+
+        android:background="@drawable/ios_style"
+        android:text="@null"
+        android:layout_marginEnd="10dp" />
+    <com.zxl.View.MyGridView
+        android:id="@+id/record_label_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:numColumns="5"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@id/record_label_sw"
+        />
+</RelativeLayout>

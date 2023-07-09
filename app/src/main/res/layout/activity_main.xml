@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="@color/grey_f3f3f3">
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/main_header_shape"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/main_daily_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="今日支出¥ 0 收入¥ 0"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:layout_below="@id/main_ll"
+        android:background="@drawable/main_header_shape"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+    <ListView
+        android:id="@+id/main_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_daily_tv"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        />
+    <ImageButton
+        android:id="@+id/main_btn_more"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/more"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/main_more_btn_bg"
+        />
+    <Button
+        android:id="@+id/main_btn_edit"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/main_btn_more"
+        android:background="@drawable/main_record_btn_bg"
+        android:text="记一笔"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:drawableStart="@mipmap/edit"
+        android:gravity="center_vertical" />
+</RelativeLayout>

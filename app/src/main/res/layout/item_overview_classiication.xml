@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/item_classification_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_qita_fs"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/item_classification_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/item_classification_iv"
+        />
+    <TextView
+        android:id="@+id/item_classification_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40%"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/item_classification_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥ 59.99"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        />
+    <ProgressBar
+        android:id="@+id/item_classification_pg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="40"
+        android:layout_marginTop="5dp"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_below="@+id/item_classification_tv2"
+        android:layout_toEndOf="@+id/item_classification_iv"
+        android:layout_alignLeft="@+id/item_classification_tv1"
+        />
+
+</RelativeLayout>

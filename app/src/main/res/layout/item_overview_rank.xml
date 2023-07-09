@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <ImageView
+        android:id="@+id/item_overview_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/overview_golden"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/item_overview_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[ 其他 ]"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/item_overview_iv"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:id="@+id/item_overview_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="麻辣小龙虾"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/item_overview_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥ 22354.0"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        />
+</RelativeLayout>

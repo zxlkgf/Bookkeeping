@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/overview_rl1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <ImageView
+            android:id="@+id/overview_iv_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/main_back"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月账单概览"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/overview_title_tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本月账单共计8笔 合计"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="15dp"
+        android:layout_below="@id/overview_rl1"
+        />
+    <TextView
+        android:id="@+id/overview_title_tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="￥ 232253.0"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="18dp"
+        android:layout_below="@+id/overview_title_tv1"
+        />
+
+</RelativeLayout>
